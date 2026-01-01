@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*========================
+	common
+========================*/
+.t-center {
+	text-align: center;
+}
+
+.layout-row {
+	display: flex;
+	flex-direction: row;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+h1 + p {
+	margin-top: 40px;
+}
+
+.err-message {
+	color: red;
+}
+
+.err-message + p {
+	margin-top: 20px;
+}
+
+p {
+	margin: 0;
+}
+
+.hand-img {
+	height: 195px;
+	width: auto;
+}
+
+.choice-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	overflow: hidden;
+	border: none;
+	padding: 20px;
+	background: #fff;
+}
+
+.choice-text {
+	text-align: center;
+	border: 4px solid #000;
+	font-size: 16px;
+}
+
+/*========================
+	index.html
+========================*/
+form {
+	margin-top: 34px;
+}
+
+.form-container .choice-item {
+	cursor: pointer;
+	transition: all .25s 	ease-out;
+}
+.form-container button img {
+	transition: all .25s 	ease-out;
+}
+.form-container button:hover img {
+	transform: scale(1.1);
+}
+
+/*========================
+	result.html
+========================*/
+.choice-container + .choice-container {
+	margin-left: 40px;
+}
+.result-message {
+	margin-top: 20px;
+}
